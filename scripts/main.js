@@ -57,7 +57,9 @@ function buildMenu(menujson) {
                 dish.description +
               "</blockquote>" +
               "<button type='button' class='menu-button' id='" +
-                courseId + ' ' + dish.id + 
+                courseId + " " + dish.id + 
+              "' aria-label='" +
+                dish.name +
               "'></button>" +
             "</li>"
           );
@@ -170,8 +172,9 @@ function updateMyOrder(dish, dishInMyOrder, ninetyninthDish) {
             "class='remove-item-button'" +
             "id='remove-button-" +
             dish.id +
+          "' aria-label='Remove " +
+            dish.name +
           "'>" +
-            
           "</button>" +
         "</span>" +
       "</li>"
