@@ -57,7 +57,7 @@ function buildMenu(menujson) {
                 dish.description +
               "</blockquote>" +
               "<button type='button' class='menu-button' id='" +
-                courseId + " " + dish.id + 
+                courseId + "-" + dish.id + 
               "' aria-label='" +
                 dish.name +
               "'></button>" +
