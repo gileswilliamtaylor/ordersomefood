@@ -101,7 +101,7 @@ function smoothScrollToCourses() {
 function chooseDish() {
     var menuItems = $(".menu-button");
     menuItems.click(function() {
-      var dishClicked = $(this).attr("id").split(" "),
+      var dishClicked = $(this).attr("id").split("-"),
         courseId = dishClicked[0],
         dishId = dishClicked[1],
         dish = findDish(courseId, dishId),
